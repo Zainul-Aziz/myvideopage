@@ -1,0 +1,196 @@
+@import url('<link href="https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap');
+
+:root
+{
+    --primary-color: #3a4052;
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    scroll-behavior: smooth
+}
+
+body
+{
+    font-family: 'Muli',sans-serif;
+    line-height: 1.5;
+}
+
+a
+{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+h1
+{
+    font-weight: 300px;
+    font-size: 50px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.main
+{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20;
+    color: white;
+}
+
+.video_area
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: var(--primary-color) url() no-repeat center center/cover;
+}
+
+.video_area video
+{
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.video_area:after
+{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.content
+{
+    z-index: 10;
+}
+
+.content h1,h2
+{
+    opacity: 0.4;
+}
+
+.logo
+{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    color: white;
+    z-index: 99;
+    opacity: 0.3;
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo a
+{
+    text-decoration: none;
+}
+.button
+{
+    display: inline-block;
+    padding: 10px 30px;
+    border: 0.5px solid whitesmoke;
+    background: var(--primary-color);
+    opacity: 0.6;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: whitesmoke;
+
+}
+
+.button:hover
+{
+    transform: scale(.97);
+}
+
+#about
+{
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Muli',sans-serif;
+    margin-bottom: 20px;
+    
+}
+#about hr
+{
+    width: 27%;
+    margin-left: 36%;
+}
+#about p
+{
+    font-size: 25px;
+    font-family: 'Muli',sans-serif;
+    padding: 0px 20px 0px 20px;
+    margin-top: 20px;
+}
+#about h1
+{
+    text-shadow: 2px 5px 5px  rgb(112, 110, 110);
+}
+.social i
+{
+    font-size: 35px;
+    margin: 50px 15px 50px 15px;
+    
+}
+#mybtn
+{
+   color: white;
+   background:  rgb(63, 83, 94);
+   font-size: 20px;
+   padding: 5px;
+   border-radius: 5px;
+   position: fixed;
+   border: none;
+   outline: none;
+   display: none;
+   cursor: pointer;
+   bottom: 34px;
+   right: 25px;
+}
+#mybtn:hover
+{
+    background: black;
+}
+#foot
+{
+    
+    padding: 5px;
+    color: #3a384d;
+    
+    text-align: center;
+    background: #dedeee;
+}
+
+#foot span
+{
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
+    font-size: 25px;
+}
