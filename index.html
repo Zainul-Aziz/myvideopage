@@ -6,7 +6,9 @@
         <link  rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:wght@300&display=swap" rel="stylesheet">
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
         <title>Video Landing Page</title>
     </head>
     <body>
@@ -16,6 +18,13 @@
                 <video src="videos/mountains.mp4" autoplay muted loop></video>
             </div>
             <div class="content">
+                <div class="contain">
+                    <h1 id="name">AHMAD ZAINUL AZIZ ANSARI</h1>
+                    <h1> 
+                        <span class="txt-type" data-wait="2000" data-words='["Web-Developer ","Web-Designer ","Android-Developer "]'>
+                        </span>
+                    </h1>
+                </div>
                 <h1>Stay Home. Stay Safe.</h1>
                 <h2>Video Landing Page</h2>
                 <a href="#about" class="button">About Us</a>
@@ -40,6 +49,7 @@
         <footer id="foot">
             <p><span> &copy; <a href="#">Fz.com</a> 2020</span></p>
         </footer>
+        <script src="main.js"></script>
         <script type="text/javascript">
             mybutton = document.getElementById("mybtn");
             window.onscroll = function() { scrollFunction()};
