@@ -35,9 +35,11 @@ a
     line-height: 1.2;
     margin-bottom: 10px;
 }
-.content #name
+#name
 {
     font-size: 40px;
+    animation: bounce;
+    animation-duration: 1s;
 }
 .main
 {
@@ -231,4 +233,30 @@ h1
     {
         font-size: 30px;
     }
+}
+
+.gh,.fb,.twitter,.instagram,.linkedin
+{
+  opacity: 0;
+}
+.gh.animated,.fb.animated,.linkedin.animated,.instagram.animated,.twitter.animated
+{
+  opacity: 1;
+}
+
+.linkedin 
+{
+  animation-delay: 0.20s;
+}
+.twitter
+{
+  animation-delay: 0.40s;
+}
+.fb
+{
+    animation-delay: 0.60s;
+}
+.instagram
+{
+    animation-delay: 0.80s;
 }
