@@ -4,11 +4,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link  rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:wght@300&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
         <title>Video Landing Page</title>
     </head>
     <body>
@@ -39,17 +41,50 @@
             <a class="fa fa-arrow-up " href="#" id="mybtn"></a>
         </div>
         <div class="social">
-           <a href="https://github.com/Zainul-Aziz"><i class="fa fa-github" ></i></a>
-            <a href="https://www.linkedin.com/in/ahmad-zainul-aziz-ansari-5590851a9/"><i class="fa fa-linkedin"></i></a>
-            <a href="https://twitter.com/ahmadzain9991"><i class="fa fa-twitter"></i></a>
-            <a href="https://www.facebook.com/zainul.aziz.581"><i class="fa fa-facebook" ></i></a>
-            <a href="https://www.instagram.com/zainul_aziz_999/?hl=en"><i class="fa fa-instagram" ></i></a> 
+            <div class="gh"> <a href="https://github.com/Zainul-Aziz"><i class="fa fa-github" ></i></a></div>
+            <div class="linkedin"><a href="https://www.linkedin.com/in/ahmad-zainul-aziz-ansari-5590851a9/"><i class="fa fa-linkedin"></i></a></div>
+            <div class="twitter"><a href="https://twitter.com/ahmadzain9991"><i class="fa fa-twitter"></i></a></div>
+            <div class="fb"><a href="https://www.facebook.com/zainul.aziz.581"><i class="fa fa-facebook" ></i></a></div>
+            <div class="instagram"><a href="https://www.instagram.com/zainul_aziz_999/?hl=en"><i class="fa fa-instagram" ></i></a></div>    
         </div>
         </section>
         <footer id="foot">
             <p><span> &copy; <a href="#">Fz.com</a> 2020</span></p>
         </footer>
         <script type="text/javascript" src="main.js"></script>
+        <script>
+
+            $(document).ready(function()
+            {
+                $('.gh').waypoint(function(direction){
+                $('.gh').addClass('animated zoomIn')
+                    }, {
+                    offset:'80%'
+            });
+            $('.linkedin').waypoint(function(direction){
+            $('.linkedin').addClass('animated  zoomIn')
+            }, {
+            offset:'80%'
+            });
+            $('.fb').waypoint(function(direction){
+            $('.fb').addClass('animated  zoomIn')
+            }, {
+            offset:'80%'
+            });
+    
+            $('.twitter').waypoint(function(direction){
+            $('.twitter').addClass('animated  zoomIn')
+            }, {
+            offset:'80%'
+            });
+    
+            $('.instagram').waypoint(function(direction){
+            $('.instagram').addClass('animated  zoomIn')
+            }, {
+            offset:'80%'
+            });
+            });
+        </script>
         <script type="text/javascript">
             mybutton = document.getElementById("mybtn");
             window.onscroll = function() { scrollFunction()};
