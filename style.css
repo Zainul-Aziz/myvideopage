@@ -157,6 +157,10 @@ a
 {
     text-shadow: 2px 5px 5px  rgb(112, 110, 110);
 }
+.social
+{
+    display: inline-flex;
+}
 .social i
 {
     font-size: 35px;
